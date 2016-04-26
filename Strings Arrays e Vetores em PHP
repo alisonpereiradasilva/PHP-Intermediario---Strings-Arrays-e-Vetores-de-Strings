@@ -1,0 +1,52 @@
+Strings, Arrays e Vetores de Strings 
+
+
+// Dados de um autómvel em Array escalonado
+
+$carro = array();
+$carro['cores'] = array('Vermelho', 'Branco', 'Cinza');
+$carro['modelo'] = 'CrossFox';
+$carro['fabricante'] = 'Volkswagen';
+echo "A terceira cor do meu " . $carro['modelo'] . " é: " . $carro['cores'][2];
+
+--------------------------------------------------------------------------------------
+Array Lista
+
+
+$lista = array('Pão', 'Ovos', 'Carne', 'Macarrão');
+	echo "O segundo item da lista é: " . $lista[1];
+
+--------------------------------------------------------------------------------------
+
+Array Strings tipo Matriz
+
+
+$dados = array("Fulano" => array("rg" => "0-000-000", "cpf" => "000.000.000-08"),
+
+"Ciclano" => array("rg" => "00.000.000-1", "cpf" => "001.000.010-00"),
+
+"Beltrano" => array("rg" => "0-000-001", "cpf" => "111.111.111-01"));
+
+echo("Dados Cadastrados ate o momento:" .
+
+ 
+"<BR><BR>Fulano: " .
+"<BR>RG: " . $dados['Fulano']['rg'] .
+
+"<BR>CPF: " . $dados['Fulano']['cpf'] .
+
+ 
+
+"<BR><BR>Ciclano: " .
+
+"<BR>RG: " . $dados['Ciclano']['rg'] .
+
+"<BR>CPF: " . $dados['Ciclano']['cpf'] .
+
+ 
+
+"<BR><BR>Beltrano: " .
+
+"<BR>RG: " . $dados['Beltrano']['rg'] .
+
+"<BR>CPF: " . $dados['Beltrano']['cpf']);
